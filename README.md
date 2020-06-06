@@ -11,8 +11,8 @@ Currently the Coral Reef theme is optimized for Ruby and Python, but it works we
 
 Ruby Example:
 
-[Imgur](https://i.imgur.com/ofRkIHf.png)
+![Coral Reef :: Ruby](https://i.imgur.com/ofRkIHf.png)
 
 The `.zshrc` configuration I use is also included in this repo, and it contains my Powerlevel9K settings.
 
-[Imgur](https://i.imgur.com/2ic4bDU.png)
+![Powerlevel9k](https://i.imgur.com/2ic4bDU.png)
