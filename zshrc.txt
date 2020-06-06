@@ -1,0 +1,58 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+POWERLEVEL9K_MODE='nerdfont-complete'
+
+# Path to your oh-my-zsh installation.
+export ZSH="/Users/<your_username>/.oh-my-zsh"
+
+# Poetry for Python
+export PATH="$HOME/.poetry/bin:$PATH"
+
+ZSH_THEME="powerlevel9k/powerlevel9k"
+
+# Powerlevel9k Prompt Settings
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(user virtualenv dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs os_icon rbenv pyenv)
+
+POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+
+POWERLEVEL9K_USER_DEFAULT_BACKGROUND='016'
+POWERLEVEL9K_USER_DEFAULT_FOREGROUND='251'
+POWERLEVEL9K_DIR_HOME_BACKGROUND='250'
+POWERLEVEL9K_DIR_HOME_FOREGROUND='000'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='33'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='000'
+
+# Powerlevel9k VCS
+POWERLEVEL9K_VCS_CLEAN_FOREGROUND='000'
+POWERLEVEL9K_VCS_CLEAN_BACKGROUND='028'
+POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='000'
+POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='124'
+POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='000'
+POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='178'
+
+POWERLEVEL9K_PYENV_PROMPT_ALWAYS_SHOW="true"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
+alias bers='bundle exec rspec'
+# Rails 2.7.1 depreciation warning workaround
+alias nodep="RUBYOPT='-W:no-deprecated'"
+alias yolo="rake db:{drop,create,migrate,seed}"
+
+# MongoDB with Brew :: start and stop service
+alias smongo="brew services start mongodb-community@4.2"
+alias xmongo="brew services stop mongodb-community@4.2"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/jww/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jww/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/jww/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jww/google-cloud-sdk/completion.zsh.inc'; fi
+
+eval "$(rbenv init -)"
+eval "$(pyenv init -)"
