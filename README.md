@@ -20,6 +20,6 @@ After the Material theme is added to VS Code select the Ocean variant. To add th
 
 ## Powerlevel9k Example
 
-The `.zshrc` configuration I use is also included in this repo as `zshrc.txt`, and it contains my entire setup. Within that setup are my `Powerlevel9k` settings. For the Powerlevel9k settings to work as expected [Ohmyzsh](https://ohmyz.sh/), [Powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k), and [Nerd Fonts Complete](https://github.com/ryanoasis/nerd-fonts) are required. My favorite font is [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode), the Reinta version.
+The `.zshrc` configuration I use is also included in this repo as `zshrc.txt`, and it contains my entire setup. Within that setup are my `Powerlevel9k` settings. For the Powerlevel9k settings to work as expected [Ohmyzsh](https://ohmyz.sh/), [Powerlevel9k](https://github.com/Powerlevel9k/powerlevel9k), and [Nerd Fonts Complete](https://github.com/ryanoasis/nerd-fonts) are required. My favorite font is [FiraCode](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FiraCode), the Reinta version. If you're new to customizing the terminal check out [this](https://www.freecodecamp.org/news/how-to-configure-your-macos-terminal-with-zsh-like-a-pro-c0ab3f3c1156/) great article for some guidance.
 
 ![Powerlevel9k](https://i.imgur.com/2ic4bDU.png)
