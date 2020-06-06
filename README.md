@@ -13,3 +13,5 @@ Ruby Example:
 [Imgur](https://i.imgur.com/ofRkIHf.png)
 
 The `.zshrc` configuration I use is also included in this repo, and it contains my Powerlevel9K settings.
+
+[Imgur](https://i.imgur.com/2ic4bDU.png)
