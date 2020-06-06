@@ -4,12 +4,14 @@ was inspired to make a custom syntax theme for it. You can find the Material the
 
 https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme
 
-After the Material theme is added to VS Code select the Ocean variant. Coral Reef will work with any theme, but my favorite is with Currently the Coral Reef theme is optimized for Ruby and Python, but it works well with a variety of languages. Here is a Python exmample:
+After the Material theme is added to VS Code select the Ocean variant. Coral Reef will work with any theme, but my favorite is with Currently the Coral Reef theme is optimized for Ruby and Python, but it works well with a variety of languages.
+
+## Python exmample:
 
 ![Coral Reef :: Python](https://i.imgur.com/3XOg1Wq.png)
 
 
-Ruby Example:
+## Ruby Example:
 
 ![Coral Reef :: Ruby](https://i.imgur.com/ofRkIHf.png)
 
