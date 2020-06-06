@@ -1,10 +1,13 @@
 # Coral Reef
-Coral Reef is a syntax color theme for VS Code. I love the Ocean variant of the Material theme and I
-was inspired to make a custom syntax theme for it. You can find the Material theme for VS Code here:
+![Coral Reef :: Python](https://i.imgur.com/gOM1hR5.png)
+
+Coral Reef is a syntax color theme for VS Code. I love the Ocean variant of the Material theme and I was inspired to make a custom syntax theme for it. Also included in this repo is my `keybindings.json` file, and a copy of my `.zshrc` file as `zshrc.txt`.
+
+You can find the Material theme for VS Code here:
 
 https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme
 
-After the Material theme is added to VS Code select the Ocean variant. Coral Reef will work with any theme, but my favorite is with Currently the Coral Reef theme is optimized for Ruby and Python, but it works well with a variety of languages.
+After the Material theme is added to VS Code select the Ocean variant. To add the Coral Reef syntax theme copy the contents of `coral_reef.json` to your VS Code `settings.json` file. If you are interested in my entire VS Code customization copy the contents of `settings.json` to your VS Code `settings.json` file. Coral Reef will work with any theme, but my favorite is Material Ocean and that's the environment I designed it in. The Coral Reef theme is optimized for Ruby and Python, but it works well with a variety of languages.
 
 ## Python Exmample
 
