@@ -1,0 +1,713 @@
+{
+  "workbench.colorTheme": "Material Theme Ocean",
+  "editor.fontLigatures": true,
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnPaste": true,
+  "workbench.sideBar.location": "right",
+  "files.autoSave": "afterDelay",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "FiraCode-Retina",
+  "terminal.integrated.fontFamily": "furamono nerd font",
+  "editor.minimap.scale": 2,
+  "editor.tabSize": 2,
+  "workbench.iconTheme": "vscode-icons",
+  "files.exclude": {
+    "**/coverage": true
+  },
+  "bracket-pair-colorizer-2.colors": [
+    "#0ff4fc",
+    // "#cfc12b",
+    // "#00c703",
+    // "#f51bd0ea",
+  ],
+  "editor.tokenColorCustomizations": {
+    "[Material Theme Ocean]": {
+      "textMateRules": [
+        {
+          "scope": "variable.other.block.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "variable.other.ruby",
+          "settings": {
+            "foreground": "#b9b9b9",
+            // "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "source.ruby",
+          "settings": {
+            "foreground": "#b9b9b9",
+            // "fontStyle": "italic"
+          }
+        },
+        // Integers
+        {
+          "scope": "constant.numeric.ruby",
+          "settings": {
+            "foreground": "#f36134",
+            // "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.control.pseudo-method.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "bold italic"
+          }
+        },
+        {
+          "scope": "support.function.core.ruby",
+          "settings": {
+            "foreground": "#805bd6ec",
+            // "fontStyle": "italic"
+          }
+        },
+        // method names and custom method calls through attr_s
+        {
+          "scope": [
+            // "source.ruby",
+            "entity.name.function.ruby",
+          ],
+          "settings": {
+            "foreground": "#308ad3",
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": [
+            "meta.function-call.ruby",
+          ],
+          "settings": {
+            "foreground": "#308ad3",
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.other.special-method.ruby",
+          "settings": {
+            "foreground": "#805bd6ec",
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.control.module.ruby",
+          "settings": {
+            "foreground": "#88d8f8",
+            "fontStyle": "italic"
+          }
+        },
+        // inherited classes
+        {
+          "scope": "variable.other.constant.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "entity.other.inherited-class.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "bold"
+          }
+        },
+        // method parameters
+        {
+          "scope": "variable.parameter.function.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "constant.language.symbol.hashkey.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "italic"
+          }
+        },
+        // string text single quotes
+        {
+          "scope": "string.quoted.single.ruby",
+          "settings": {
+            "foreground": "#dd8bbbe0",
+            // "fontStyle": "bold"
+          }
+        },
+        // string test double quotes
+        {
+          "scope": "string.quoted.double.ruby",
+          "settings": {
+            "foreground": "#dd8bbbe0",
+            // "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "constant.other.symbol.ruby",
+          "settings": {
+            "foreground": "#dd8bbbe0",
+            // "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "constant.language.boolean.ruby",
+          "settings": {
+            "foreground": "#b80d54e0",
+            "fontStyle": "italic bold",
+          }
+        },
+        {
+          "scope": "constant.language.symbol.ruby",
+          "settings": {
+            "foreground": "#dd8bbbe0",
+            // "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "entity.name.type.module.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "constant.other.symbol.hashkey.ruby",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "italic"
+          }
+        },
+        // @ before instance variables
+        {
+          "scope": "punctuation.definition.variable.ruby",
+          "settings": {
+            "foreground": "#caa453",
+            // "fontStyle": "bold"
+          }
+        },
+        // instance variable
+        {
+          "scope": "variable.other.readwrite.instance.ruby",
+          "settings": {
+            "foreground": "#caa453",
+            // "fontStyle": "bold"
+          }
+        },
+        // class variable
+        {
+          "scope": "variable.other.readwrite.class.ruby",
+          "settings": {
+            "foreground": "#caa453",
+            // "fontStyle": "bold"
+          }
+        },
+        // Class name
+        {
+          "scope": "entity.name.type.class.ruby",
+          "settings": {
+            "foreground": "#caa453",
+            "fontStyle": "bold"
+          }
+        },
+        // def
+        {
+          "scope": "keyword.control.def.ruby",
+          "settings": {
+            "foreground": "#88d8f8",
+            "fontStyle": "italic"
+          }
+        },
+        // end
+        {
+          "scope": "keyword.control.ruby",
+          "settings": {
+            "foreground": "#88d8f8",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.operator.logical.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "punctuation.separator.other.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold",
+          }
+        },
+        {
+          "scope": "keyword.operator.comparison.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.operator.assignment.augmented.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.control.class.ruby",
+          "settings": {
+            "foreground": "#76bcd8",
+            "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "keyword.control.start-block.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold",
+          }
+        },
+        {
+          "scope": "punctuation.separator.object.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "support.class.ruby",
+          "settings": {
+            "foreground": "#caa453",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": "keyword.ruby",
+          "settings": {
+            "foreground": "#88d8f8",
+            "fontStyle": "italic"
+          }
+        },
+        // variable assignment
+        {
+          "scope": "keyword.operator.assignment.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold",
+          }
+        },
+        // arithmetic: +, -, *
+        {
+          "scope": "keyword.operator.arithmetic.ruby",
+          "settings": {
+            "foreground": "#e0cb0e",
+            "fontStyle": "bold",
+          }
+        },
+        // arithmetic /
+        // {
+        //     "scope": "punctuation.definition.string.ruby",
+        //     "settings": {
+        //         "foreground": "#0ff4fc",
+        //     }
+        // },
+        {
+          "scope": "punctuation.section.scope.end.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.section.scope.begin.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.definition.parameters.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.section.function.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.separator.variable.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.section.array.begin.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.section.array.end.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.section.embedded.begin.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.section.embedded.end.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.separator.method.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        {
+          "scope": "punctuation.separator.key-value",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        // apostrophe string start
+        {
+          "scope": "punctuation.definition.string.begin.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        // apostrophe string end
+        {
+          "scope": "punctuation.definition.string.end.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        // colon
+        {
+          "scope": "punctuation.definition.constant.ruby",
+          "settings": {
+            "foreground": "#0ff4fc",
+          }
+        },
+        // ********** Python Syntax Theme ************
+        // python control flow ex: 'from'
+        {
+          "scope": "keyword.control.flow.python",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "italic"
+          }
+        },
+        // python function def
+        {
+          "scope": "storage.type.function.python",
+          "settings": {
+            "foreground": "#0FF4FC",
+            "fontStyle": "italic"
+          }
+        },
+        // python core function
+        {
+          "scope": "support.function.builtin.python",
+          "settings": {
+            "foreground": "#805bd6ec",
+            "fontStyle": "italic"
+          }
+        },
+        // python control import
+        {
+          "scope": "keyword.control.import.python",
+          "settings": {
+            "foreground": "#58c45d",
+            "fontStyle": "italic"
+          }
+        },
+        // python source
+        {
+          "scope": "source.python",
+          "settings": {
+            "foreground": "#A6ACCD",
+          }
+        },
+        // python function arguments
+        {
+          "scope": "meta.function-call.arguments.python",
+          "settings": {
+            "foreground": "#A6ACCD",
+          }
+        },
+        // python meta function
+        {
+          "scope": "meta.item-access.python",
+          "settings": {
+            "foreground": "#A6ACCD",
+          }
+        },
+        // python variable function
+        {
+          "scope": "variable.parameter.function-call.python",
+          "settings": {
+            "foreground": "#308ad3",
+          }
+        },
+        // python function
+        {
+          "scope": "entity.name.function.python",
+          "settings": {
+            "foreground": "#308ad3",
+            // "fontStyle": "italic"
+          }
+        },
+        // python
+        {
+          "scope": "meta.function-call.generic.python",
+          "settings": {
+            "foreground": "#308AD3",
+            // "fontStyle": "italic"
+          }
+        },
+        // python function parameter
+        {
+          "scope": "variable.parameter.function.language.python",
+          "settings": {
+            "foreground": "#d3bd30",
+            // "fontStyle": "italic"
+          }
+        },
+        // python functon parameter (magic)
+        {
+          "scope": "support.variable.magic.python",
+          "settings": {
+            "foreground": "#D3BD30",
+            // "fontStyle": "italic"
+          }
+        },
+        // python single qutoed string text
+        {
+          "scope": "string.quoted.single.python",
+          "settings": {
+            "foreground": "#dd8bbbe0",
+            // "fontStyle": "italic"
+          }
+        },
+        // python entity name function decorator
+        {
+          "scope": "entity.name.function.decorator.python",
+          "settings": {
+            "foreground": "#D3BD30",
+            // "fontStyle": "italic"
+          }
+        },
+        // python @
+        {
+          "scope": "punctuation.definition.decorator.python",
+          "settings": {
+            "foreground": "#D3BD30",
+            // "fontStyle": "italic"
+          }
+        },
+        // python boolean
+        {
+          "scope": "constant.language.python",
+          "settings": {
+            "foreground": "#b80d54e0",
+            "fontStyle": "italic bold"
+          }
+        },
+        // python assignment operator: =
+        {
+          "scope": "keyword.operator.assignment.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold"
+          }
+        },
+        // python assignment operator: =
+        {
+          "scope": "keyword.operator.comparison.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold"
+          }
+        },
+        // python integers
+        {
+          "scope": "constant.numeric.dec.python",
+          "settings": {
+            "foreground": "#f36134",
+            // "fontStyle": "bold"
+          }
+        },
+        // python dictionary start
+        {
+          "scope": "punctuation.definition.dict.begin.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python dictionary end
+        {
+          "scope": "punctuation.definition.dict.end.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python list arguments begin
+        {
+          "scope": "punctuation.definition.arguments.begin.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python list arguments end
+        {
+          "scope": "punctuation.definition.arguments.end.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python list begin
+        {
+          "scope": "punctuation.definition.list.begin.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python list end
+        {
+          "scope": "punctuation.definition.list.end.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python parameters begin
+        {
+          "scope": "punctuation.definition.parameters.begin.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python parameters begin
+        {
+          "scope": "punctuation.definition.parameters.end.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python punctuation peroid
+        {
+          "scope": "punctuation.separator.period.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python punctuation dictionary
+        {
+          "scope": "punctuation.separator.dict.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            // "fontStyle": "bold"
+          }
+        },
+        // python f string
+        {
+          "scope": "storage.type.string.python",
+          "settings": {
+            "foreground": "#805bd6ec",
+            "fontStyle": "bold italic"
+          }
+        },
+        // python and
+        {
+          "scope": "keyword.operator.logical.python",
+          "settings": {
+            "foreground": "#0ff4fc",
+            "fontStyle": "bold italic"
+          }
+        },
+        // python exception
+        {
+          "scope": "support.type.exception.python",
+          "settings": {
+            "foreground": "#F36134",
+            "fontStyle": "italic"
+          }
+        },
+        // python arithmetic
+        {
+          "scope": "keyword.operator.arithmetic.python",
+          "settings": {
+            "foreground": "#c7f334",
+            "fontStyle": "bold"
+          }
+        },
+        // python colon seperator
+        {
+          "scope": "punctuation.separator.colon.python",
+          "settings": {
+            "foreground": "#0FF4FC",
+            "fontStyle": "bold"
+          }
+        },
+        // python function begin
+        {
+          "scope": "punctuation.section.function.begin.python",
+          "settings": {
+            "foreground": "#0FF4FC",
+            "fontStyle": "bold"
+          }
+        },
+        // python class
+        {
+          "scope": "storage.type.class.python",
+          "settings": {
+            "foreground": "#0FF4FC",
+            "fontStyle": "italic"
+          }
+        },
+        // python class name
+        {
+          "scope": "entity.name.type.class.python",
+          "settings": {
+            "foreground": "#D3BD30",
+            "fontStyle": "bold"
+          }
+        },
+      ]
+    },
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.zoomLevel": 0,
+  "editor.cursorStyle": "block",
+  "editor.cursorBlinking": "smooth",
+  "workbench.colorCustomizations": {},
+  "workbench.editor.showTabs": true,
+  "gitlens.currentLine.enabled": false,
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.pythonPath": "/Users/jww/.pyenv/versions/3.8.2/bin/python",
+  "python.jediEnabled": false
+}
