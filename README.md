@@ -1,7 +1,7 @@
 # Coral Reef
 ![Coral Reef :: Python](https://i.imgur.com/gOM1hR5.png)
 
-**_Coral Reef_** is an opinionated syntax color theme for VS Code. I love the Ocean variant of the **_Material_** theme and it inspired me to design a custom syntax theme. I started with a color commonly found on [Coral Reefs](https://en.wikipedia.org/wiki/Coral_reef) that I liked a lot, the pink-ish string color in the theme, and utilized a color wheel to build around that color. The goal of the project is to create a highly readable syntax theme by approaching the process from a [Graphic Design](https://en.wikipedia.org/wiki/Graphic_design) perspective and implementing [Color Theory](https://www.canva.com/colors/color-wheel/).
+**_Coral Reef_** is an opinionated syntax color theme for VS Code. I love the Ocean variant of the **_Material_** theme and it inspired me to design a custom syntax theme. I started with a color commonly found on [Coral Reefs](https://en.wikipedia.org/wiki/Coral_reef) that I wanted to include, the pink-ish string color in the theme, and utilized a color wheel to build around that color. The goal of the project is to create a highly readable syntax theme by approaching the process from a [Graphic Design](https://en.wikipedia.org/wiki/Graphic_design) perspective and implementing [Color Theory](https://www.canva.com/colors/color-wheel/).
 
 [Please help conserve coral reefs.](https://www.nature.org/en-us/what-we-do/our-priorities/protect-water-and-land/land-and-water-stories/8-easy-ways-you-can-help-coral-reefs/)
 
