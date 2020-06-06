@@ -6,14 +6,16 @@ https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-the
 
 After the Material theme is added to VS Code select the Ocean variant. Coral Reef will work with any theme, but my favorite is with Currently the Coral Reef theme is optimized for Ruby and Python, but it works well with a variety of languages.
 
-## Python exmample:
+## Python Exmample
 
 ![Coral Reef :: Python](https://i.imgur.com/3XOg1Wq.png)
 
 
-## Ruby Example:
+## Ruby Example
 
 ![Coral Reef :: Ruby](https://i.imgur.com/ofRkIHf.png)
+
+## Powerlevel9k Example
 
 The `.zshrc` configuration I use is also included in this repo, and it contains my Powerlevel9K settings.
 
