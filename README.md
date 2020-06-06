@@ -1,6 +1,6 @@
 # Coral Reef
 Coral Reef is a syntax color theme for VS Code. I love the Ocean variant of the Material theme and I
-was inspired to make a custom syntax theme for it. You can find the Material theme here:
+was inspired to make a custom syntax theme for it. You can find the Material theme for VS Code here:
 
 https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme
 
