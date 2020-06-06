@@ -6,7 +6,8 @@ https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-the
 
 Currently the Coral Reef theme is optimized for Ruby and Python, but it works well with a variety of languages. Here is a Python exmample:
 
-[Imgur](https://i.imgur.com/3XOg1Wq.png)
+![Coral Reef :: Python](https://i.imgur.com/3XOg1Wq.png)
+
 
 Ruby Example:
 
