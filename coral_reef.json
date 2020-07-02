@@ -66,6 +66,13 @@
           }
         },
         {
+          "scope": "support.function.kernel.ruby",
+          "settings": {
+            "foreground": "#805bd6ec",
+            // "fontStyle": "italic"
+          }
+        },
+        {
           "scope": "keyword.other.special-method.ruby",
           "settings": {
             "foreground": "#805bd6ec",
@@ -374,9 +381,7 @@
             "foreground": "#0ff4fc",
           }
         },
-        // **********                     ************
         // ********** Python Syntax Theme ************
-        //***********                     ************
         // python control flow ex: 'from'
         {
           "scope": "keyword.control.flow.python",
@@ -457,7 +462,7 @@
         {
           "scope": "variable.parameter.function.language.python",
           "settings": {
-            "foreground": "#d3bd30",
+            "foreground": "#F36134",
             // "fontStyle": "italic"
           }
         },
@@ -668,8 +673,16 @@
             "foreground": "#D3BD30",
             "fontStyle": "bold"
           }
-        }
+        },
+        // python inherited-class
+        {
+          "scope": "entity.other.inherited-class.python",
+          "settings": {
+            "foreground": "#D3BD30",
+            // "fontStyle": "bold"
+          }
+        },
       ]
-    }
+    },
   }
 }
