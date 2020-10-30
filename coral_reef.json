@@ -5,21 +5,21 @@
         {
           "scope": "variable.other.block.ruby",
           "settings": {
-            "foreground": "#58c45d",
+            "foreground": "#58c45d"
             // "fontStyle": "italic"
           }
         },
         {
           "scope": "variable.other.ruby",
           "settings": {
-            "foreground": "#b9b9b9",
+            "foreground": "#b9b9b9"
             // "fontStyle": "bold"
           }
         },
         {
           "scope": "source.ruby",
           "settings": {
-            "foreground": "#b9b9b9",
+            "foreground": "#b9b9b9"
             // "fontStyle": "italic"
           }
         },
@@ -27,7 +27,7 @@
         {
           "scope": "constant.numeric.ruby",
           "settings": {
-            "foreground": "#f36134",
+            "foreground": "#f36134"
             // "fontStyle": "bold"
           }
         },
@@ -41,7 +41,7 @@
         {
           "scope": "support.function.core.ruby",
           "settings": {
-            "foreground": "#805bd6ec",
+            "foreground": "#805bd6ec"
             // "fontStyle": "italic"
           }
         },
@@ -49,33 +49,31 @@
         {
           "scope": [
             // "source.ruby",
-            "entity.name.function.ruby",
+            "entity.name.function.ruby"
           ],
           "settings": {
-            "foreground": "#308ad3",
+            "foreground": "#308ad3"
             // "fontStyle": "italic"
           }
         },
         {
-          "scope": [
-            "meta.function-call.ruby",
-          ],
+          "scope": ["meta.function-call.ruby"],
           "settings": {
-            "foreground": "#308ad3",
+            "foreground": "#308ad3"
             // "fontStyle": "italic"
           }
         },
         {
           "scope": "support.function.kernel.ruby",
           "settings": {
-            "foreground": "#805bd6ec",
+            "foreground": "#805bd6ec"
             // "fontStyle": "italic"
           }
         },
         {
           "scope": "keyword.other.special-method.ruby",
           "settings": {
-            "foreground": "#805bd6ec",
+            "foreground": "#805bd6ec"
             // "fontStyle": "italic"
           }
         },
@@ -105,7 +103,7 @@
         {
           "scope": "variable.parameter.function.ruby",
           "settings": {
-            "foreground": "#58c45d",
+            "foreground": "#58c45d"
             // "fontStyle": "italic"
           }
         },
@@ -120,7 +118,7 @@
         {
           "scope": "string.quoted.single.ruby",
           "settings": {
-            "foreground": "#dd8bbbe0",
+            "foreground": "#dd8bbbe0"
             // "fontStyle": "bold"
           }
         },
@@ -128,14 +126,14 @@
         {
           "scope": "string.quoted.double.ruby",
           "settings": {
-            "foreground": "#dd8bbbe0",
+            "foreground": "#dd8bbbe0"
             // "fontStyle": "bold"
           }
         },
         {
           "scope": "constant.other.symbol.ruby",
           "settings": {
-            "foreground": "#dd8bbbe0",
+            "foreground": "#dd8bbbe0"
             // "fontStyle": "bold"
           }
         },
@@ -143,13 +141,13 @@
           "scope": "constant.language.boolean.ruby",
           "settings": {
             "foreground": "#b80d54e0",
-            "fontStyle": "italic bold",
+            "fontStyle": "italic bold"
           }
         },
         {
           "scope": "constant.language.symbol.ruby",
           "settings": {
-            "foreground": "#dd8bbbe0",
+            "foreground": "#dd8bbbe0"
             // "fontStyle": "bold"
           }
         },
@@ -171,7 +169,7 @@
         {
           "scope": "punctuation.definition.variable.ruby",
           "settings": {
-            "foreground": "#caa453",
+            "foreground": "#caa453"
             // "fontStyle": "bold"
           }
         },
@@ -179,7 +177,7 @@
         {
           "scope": "variable.other.readwrite.instance.ruby",
           "settings": {
-            "foreground": "#caa453",
+            "foreground": "#caa453"
             // "fontStyle": "bold"
           }
         },
@@ -187,7 +185,7 @@
         {
           "scope": "variable.other.readwrite.class.ruby",
           "settings": {
-            "foreground": "#caa453",
+            "foreground": "#caa453"
             // "fontStyle": "bold"
           }
         },
@@ -226,7 +224,7 @@
           "scope": "punctuation.separator.other.ruby",
           "settings": {
             "foreground": "#0ff4fc",
-            "fontStyle": "bold",
+            "fontStyle": "bold"
           }
         },
         {
@@ -253,14 +251,14 @@
         {
           "scope": "keyword.control.start-block.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold",
           }
         },
         {
           "scope": "punctuation.separator.object.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -283,7 +281,7 @@
           "scope": "keyword.operator.assignment.ruby",
           "settings": {
             "foreground": "#0ff4fc",
-            "fontStyle": "bold",
+            "fontStyle": "bold"
           }
         },
         // arithmetic: +, -, *
@@ -291,94 +289,101 @@
           "scope": "keyword.operator.arithmetic.ruby",
           "settings": {
             "foreground": "#e0cb0e",
-            "fontStyle": "bold",
+            "fontStyle": "bold"
           }
         },
+        // arithmetic /
+        // {
+        //     "scope": "punctuation.definition.string.ruby",
+        //     "settings": {
+        //         "foreground": "#0ff4fc",
+        //     }
+        // },
         {
           "scope": "punctuation.section.scope.end.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.section.scope.begin.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.definition.parameters.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.section.function.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.separator.variable.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.section.array.begin.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.section.array.end.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.section.embedded.begin.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.section.embedded.end.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.separator.method.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         {
           "scope": "punctuation.separator.key-value",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         // apostrophe string start
         {
           "scope": "punctuation.definition.string.begin.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         // apostrophe string end
         {
           "scope": "punctuation.definition.string.end.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         // colon
         {
           "scope": "punctuation.definition.constant.ruby",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
           }
         },
         // ********** Python Syntax Theme ************
@@ -418,35 +423,35 @@
         {
           "scope": "source.python",
           "settings": {
-            "foreground": "#A6ACCD",
+            "foreground": "#A6ACCD"
           }
         },
         // python function arguments
         {
           "scope": "meta.function-call.arguments.python",
           "settings": {
-            "foreground": "#A6ACCD",
+            "foreground": "#A6ACCD"
           }
         },
         // python meta function
         {
           "scope": "meta.item-access.python",
           "settings": {
-            "foreground": "#A6ACCD",
+            "foreground": "#A6ACCD"
           }
         },
         // python variable function
         {
           "scope": "variable.parameter.function-call.python",
           "settings": {
-            "foreground": "#308ad3",
+            "foreground": "#308ad3"
           }
         },
         // python function
         {
           "scope": "entity.name.function.python",
           "settings": {
-            "foreground": "#308ad3",
+            "foreground": "#308ad3"
             // "fontStyle": "italic"
           }
         },
@@ -454,7 +459,7 @@
         {
           "scope": "meta.function-call.generic.python",
           "settings": {
-            "foreground": "#308AD3",
+            "foreground": "#308AD3"
             // "fontStyle": "italic"
           }
         },
@@ -462,7 +467,7 @@
         {
           "scope": "variable.parameter.function.language.python",
           "settings": {
-            "foreground": "#F36134",
+            "foreground": "#F36134"
             // "fontStyle": "italic"
           }
         },
@@ -470,7 +475,7 @@
         {
           "scope": "support.variable.magic.python",
           "settings": {
-            "foreground": "#D3BD30",
+            "foreground": "#D3BD30"
             // "fontStyle": "italic"
           }
         },
@@ -478,7 +483,7 @@
         {
           "scope": "string.quoted.single.python",
           "settings": {
-            "foreground": "#dd8bbbe0",
+            "foreground": "#dd8bbbe0"
             // "fontStyle": "italic"
           }
         },
@@ -486,7 +491,7 @@
         {
           "scope": "entity.name.function.decorator.python",
           "settings": {
-            "foreground": "#D3BD30",
+            "foreground": "#D3BD30"
             // "fontStyle": "italic"
           }
         },
@@ -494,7 +499,7 @@
         {
           "scope": "punctuation.definition.decorator.python",
           "settings": {
-            "foreground": "#D3BD30",
+            "foreground": "#D3BD30"
             // "fontStyle": "italic"
           }
         },
@@ -526,7 +531,7 @@
         {
           "scope": "constant.numeric.dec.python",
           "settings": {
-            "foreground": "#f36134",
+            "foreground": "#f36134"
             // "fontStyle": "bold"
           }
         },
@@ -534,7 +539,7 @@
         {
           "scope": "punctuation.definition.dict.begin.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -542,7 +547,7 @@
         {
           "scope": "punctuation.definition.dict.end.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -550,7 +555,7 @@
         {
           "scope": "punctuation.definition.arguments.begin.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -558,7 +563,7 @@
         {
           "scope": "punctuation.definition.arguments.end.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -566,7 +571,7 @@
         {
           "scope": "punctuation.definition.list.begin.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -574,7 +579,7 @@
         {
           "scope": "punctuation.definition.list.end.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -582,7 +587,7 @@
         {
           "scope": "punctuation.definition.parameters.begin.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -590,7 +595,7 @@
         {
           "scope": "punctuation.definition.parameters.end.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -598,7 +603,7 @@
         {
           "scope": "punctuation.separator.period.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -606,7 +611,7 @@
         {
           "scope": "punctuation.separator.dict.python",
           "settings": {
-            "foreground": "#0ff4fc",
+            "foreground": "#0ff4fc"
             // "fontStyle": "bold"
           }
         },
@@ -678,11 +683,11 @@
         {
           "scope": "entity.other.inherited-class.python",
           "settings": {
-            "foreground": "#D3BD30",
+            "foreground": "#D3BD30"
             // "fontStyle": "bold"
           }
-        },
+        }
       ]
-    },
+    }
   }
 }
