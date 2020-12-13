@@ -6,7 +6,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 export ZSH="/Users/jww/.oh-my-zsh"
 
 # Poetry for Python
-export PATH="$HOME/.poetry/bin:$PATH" qafwswsedrft
+export PATH="$HOME/.poetry/bin:$PATH"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
