@@ -8,9 +8,8 @@
   "files.autoSave": "afterDelay",
   "editor.minimap.enabled": false,
   "editor.fontFamily": "FiraCode-Retina",
-  "terminal.integrated.fontFamily": "furamono nerd font",
+  "terminal.integrated.fontFamily": "FiraMono Nerd Font Mono",
   "editor.minimap.scale": 2,
-  "editor.tabSize": 2,
   "workbench.iconTheme": "vscode-icons",
   "files.exclude": {
     "**/coverage": true
@@ -84,6 +83,13 @@
           ],
           "settings": {
             "foreground": "#308ad3",
+            // "fontStyle": "italic"
+          }
+        },
+        {
+          "scope": "support.function.kernel.ruby",
+          "settings": {
+            "foreground": "#805bd6ec",
             // "fontStyle": "italic"
           }
         },
@@ -309,13 +315,6 @@
             "fontStyle": "bold",
           }
         },
-        // arithmetic /
-        // {
-        //     "scope": "punctuation.definition.string.ruby",
-        //     "settings": {
-        //         "foreground": "#0ff4fc",
-        //     }
-        // },
         {
           "scope": "punctuation.section.scope.end.ruby",
           "settings": {
@@ -428,6 +427,14 @@
             "fontStyle": "italic"
           }
         },
+        // python meta function
+        {
+          "scope": "meta.function-call.python",
+          "settings": {
+            "foreground": "#805bd6ec",
+            "fontStyle": "italic"
+          }
+        },
         // python control import
         {
           "scope": "keyword.control.import.python",
@@ -469,7 +476,24 @@
           "scope": "entity.name.function.python",
           "settings": {
             "foreground": "#308ad3",
+            // "fontStyle": "bold"
+          }
+        },
+        // python function
+        {
+          "scope": "entity.name.function",
+          "settings": {
+            "foreground": "#308ad3",
+            // "fontStyle": "bold",
             // "fontStyle": "italic"
+          }
+        },
+        // python entity function
+        {
+          "scope": "entity.name.namespace",
+          "settings": {
+            "foreground": "#D3BD30",
+            // "fontStyle": "bold"
           }
         },
         // python
@@ -484,7 +508,15 @@
         {
           "scope": "variable.parameter.function.language.python",
           "settings": {
-            "foreground": "#d3bd30",
+            "foreground": "#34f3da",
+            // "fontStyle": "italic"
+          }
+        },
+        // python function parameter
+        {
+          "scope": "variable.parameter",
+          "settings": {
+            "foreground": "#F36134",
             // "fontStyle": "italic"
           }
         },
@@ -696,6 +728,22 @@
             "fontStyle": "bold"
           }
         },
+        // python entity class name
+        {
+          "scope": "entity.name.type.class",
+          "settings": {
+            "foreground": "#805bd6ec",
+            "fontStyle": "bold"
+          }
+        },
+        // python inherited-class
+        {
+          "scope": "entity.other.inherited-class.python",
+          "settings": {
+            "foreground": "#D3BD30",
+            // "fontStyle": "bold"
+          }
+        },
       ]
     },
   },
@@ -708,6 +756,28 @@
   "gitlens.currentLine.enabled": false,
   "editor.suggestSelection": "first",
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-  "python.pythonPath": "/Users/jww/.pyenv/versions/3.8.2/bin/python",
-  "python.jediEnabled": false
+  // "python.pythonPath": "/Users/jww/.pyenv/shims/python3",
+  "python.poetryPath": "poetry",
+  "python.venvPath": "~/.cache/pypoetry/virtualenvs",
+  // "python.languageServer": "Microsoft",
+  // "python.jediEnabled": true,
+  "editor.fontSize": 14,
+  "debug.console.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "bracket-pair-colorizer-2.activeScopeCSS": [
+    "borderStyle : solid",
+    "borderWidth : 1px",
+    "borderColor : {color}",
+    "opacity: 0.5"
+  ],
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.views.repositories.enabled": true,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "python.autoComplete.addBrackets": true,
+  "python.languageServer": "Pylance",
+  "python.analysis.completeFunctionParens": true
 }
