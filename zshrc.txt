@@ -1,5 +1,7 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Enable Nerfonts Complete for Powerlevel9k
 POWERLEVEL9K_MODE='nerdfont-complete'
 
 # Path to your oh-my-zsh installation.
@@ -8,10 +10,7 @@ export ZSH="/Users/jww/.oh-my-zsh"
 # Poetry for Python
 export PATH="$HOME/.poetry/bin:$PATH"
 
-# Set name of the theme to load --- if set to "random", it will
-# load a random theme each time oh-my-zsh is loaded, in which case,
-# to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+# ZSH Theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Powerlevel9k Prompt Settings
@@ -37,12 +36,6 @@ POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='000'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='178'
 
 POWERLEVEL9K_PYENV_PROMPT_ALWAYS_SHOW="true"
-
-# Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME=random will cause zsh to load
-# a theme from this variable instead of looking in ~/.oh-my-zsh/themes/
-# If set to an empty array, this variable will have no effect.
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -100,14 +93,30 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
+# Ruby + Rails
 alias bers='bundle exec rspec'
 alias nodep="RUBYOPT='-W:no-deprecated'"
 alias yolo="rake db:{drop,create,migrate,seed}"
 
+# PostgreSQL with Brew
+alias spsql="brew services start postgresql"
+alias xpsql="brew services stop postgresql"
+
+# MySQL with Brew
+alias smysql="brew services start mysql"
+alias xmysql="brew services stop mysql"
+
 # MongoDB with Brew
-alias smongo="brew services start mongodb-community@4.2"
-alias xmongo="brew services stop mongodb-community@4.2"
+alias smongo="brew services start mongodb-community"
+alias xmongo="brew services stop mongodb-community"
+
+# Elasticsearch with Brew
+alias selastic="brew services start elasticsearch-full"
+alias xelastic="brew services stop elasticsearch-full"
+
+# Elasticsearch with Brew
+alias selastic="brew services start redis"
+alias xelastic="brew services stop redis"
 
 # SimpleCov
 alias showcov="open coverage/index.html"
@@ -118,9 +127,129 @@ alias search="history | grep"
 # Run Google Cloud Build
 alias gcb="gcloud builds submit --config cloudbuild.yaml"
 
-# Run Pytest with Coverage
-alias pyt(){
+# Snowflake SnowSQL
+alias snowsql="/Applications/SnowSQL.app/Contents/MacOS/snowsql"
+
+# Meltano :: Docker command
+alias meltanod="docker run --interactive -v $(pwd):/projects -w /projects meltano/meltano:latest-python3.8"
+
+# Edit .zshrc config
+alias editzsh="code . /Users/jww/.zshrc"
+
+# Enable Docker commands in Minikube.
+alias minidoc="eval $(minikube docker-env)"
+
+# Run Pytest with Coverage. Run with: $1 = pyt package_name
+pyt() {
   pytest --cov-report term-missing --cov=$1 tests/
+}
+
+# Set the GCP project id
+# $1 = project id
+gcpid() {
+  export PROJECT_ID=$1
+}
+
+# Set active GCP project
+# $1 = project id
+gcproject() {
+  gcloud config set project $1
+}
+
+# Authenticate cluster
+# $1 = cluster name
+# $2 = zone
+gcpcluster() {
+  gcloud container clusters get-credentials $1 --zone=$2
+}
+
+# Copy Kubernetes secret from one cluster to another.
+# $1 = secret name
+# $2 = source cluster
+# $3 = destination cluster
+kscopy() {
+  kubectl get secret $1 --context $2 -o yaml | kubectl apply --context $3 -f -
+}
+
+# Create new Kubernetes secret from a file.
+# $1 = secret name
+# $2 = secret key
+# $3 = file path
+ksfile() {
+  kubectl create secret generic $1 --from-file=$2=$3
+}
+
+# Create new Kubernetes secret literal.
+# $1 = secret name
+# $2 = secret key
+# $3 = secret value
+ksliteral() {
+  kubectl create secret generic $1 --from-literal $2=$3
+}
+
+# Create new Kubernetes secret from .env file
+# $1 = secret name
+# $2 = file path
+ksenv() {
+  kubectl create secret generic $1 --from-env-file $2
+}
+
+# Build a new Docker image
+# $1 = image name
+# $2 = image tag
+dbuild() {
+  docker build --no-cache --tag $1:$2 .
+}
+
+# GCR tag image
+# $1 = image name
+# $2 = image tag
+# $3 = GCP project id
+gcrtag() {
+  docker tag $1:$2 gcr.io/$3/$1:$2
+}
+
+# GCR push image
+# $1 = image name
+# $2 = image tag
+# $3 = GCP project id
+gcrpush() {
+  docker push gcr.io/$3/$1:$2
+}
+
+# Launch Airbyte locally
+airbytestart() {
+  kubectl port-forward svc/airbyte-webapp-svc 8000:80
+}
+
+# Airbyte :: Build Source
+# $1 = source name
+airbytebuild() {
+  docker build . -t airbyte/source-$1:dev
+}
+
+# Check Airbyte Spec
+# $1 = source name
+airbytespec() {
+  docker run --rm airbyte/source-$1:dev spec
+}
+
+# Check Airbyte Config
+# $1 = source name
+airbyteconfig() {
+  docker run --rm -v $(pwd)/secrets:/secrets airbyte/source-$1:dev check --config /secrets/config.json
+}
+
+# Check Airbyte Discover
+# $1 = source name
+airbytediscover() {
+  docker run --rm -v $(pwd)/secrets:/secrets airbyte/source-$1:dev discover --config /secrets/config.json
+}
+
+# Check Airbyte Source
+# $1 = source name
+airbytesource() {
+  docker run --rm -v $(pwd)/secrets:/secrets -v $(pwd)/sample_files:/sample_files airbyte/source-$1:dev read --config /secrets/config.json --catalog /sample_files/configured_catalog.json
 }
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -138,14 +267,11 @@ alias pyt(){
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+# added by Snowflake SnowSQL installer v1.2
+export PATH=/Applications/SnowSQL.app/Contents/MacOS:$PATH
+
+# kubectl autocomplete
+[[ /Users/jww/google-cloud-sdk/bin/kubectl ]] && source <(kubectl completion zsh)
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/jww/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jww/google-cloud-sdk/path.zsh.inc'; fi
@@ -153,5 +279,8 @@ if [ -f '/Users/jww/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jww/google-
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/jww/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jww/google-cloud-sdk/completion.zsh.inc'; fi
 
-eval "$(pyenv init -)"
+eval "$(pyenv init --path)"
 eval "$(rbenv init -)"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
